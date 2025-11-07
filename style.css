@@ -1,0 +1,136 @@
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+.box {
+  background-color: var(--white);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.75);
+  padding: 24px;
+  gap: 24px;
+}
+
+.box img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tag {
+  width: max-content;
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.date {
+  color: var(--gray-950);
+  font-size: 14px;
+}
+.content h2 {
+  color: var(--gray-950);
+  font-size: 24px;
+  font-weight: 800;
+}
+.des {
+  color: var(--gray-500);
+  font-size: 16px;
+  line-height: 22px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+.circle img {
+  width: 100%;
+  border-radius: 50%;
+}
+.name {
+  color: var(--gray-950);
+  font-size: 16px;
+  font-weight: 800;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: var(--yellow);
+  border-top: 1px solid #6b6b6b57;
+}
+footer p {
+  color: var(--gray-950);
+  font-size: 16px;
+}
+
+@media (max-width: 440px) {
+  .box {
+    width: 300px;
+  }
+  .tag {
+    font-size: 10px;
+  }
+  .date {
+    font-size: 10px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .des {
+    font-size: 12px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .name {
+    font-size: 12px;
+  }
+}
